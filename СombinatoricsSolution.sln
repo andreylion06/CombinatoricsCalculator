@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{7B1B3AF8-59B8-4AE1-9D2D-6292D5304B92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{7B1B3AF8-59B8-4AE1-9D2D-6292D5304B92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinatoricsLibrary", "CombinatoricsLibrary\CombinatoricsLibrary.csproj", "{BFB97A52-6250-48EA-9795-0B77D60DBD78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CombinatoricsLibrary", "CombinatoricsLibrary\CombinatoricsLibrary.csproj", "{BFB97A52-6250-48EA-9795-0B77D60DBD78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinatoricsCalculator", "CombinatoricsCalculator\CombinatoricsCalculator.csproj", "{84FC527D-8503-4D79-9467-8A032A89A8F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BFB97A52-6250-48EA-9795-0B77D60DBD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB97A52-6250-48EA-9795-0B77D60DBD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB97A52-6250-48EA-9795-0B77D60DBD78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84FC527D-8503-4D79-9467-8A032A89A8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84FC527D-8503-4D79-9467-8A032A89A8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84FC527D-8503-4D79-9467-8A032A89A8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84FC527D-8503-4D79-9467-8A032A89A8F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
