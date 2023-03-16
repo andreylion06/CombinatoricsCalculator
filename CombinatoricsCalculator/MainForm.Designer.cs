@@ -31,6 +31,7 @@
             groupBox_Expression = new GroupBox();
             comboBox_CombName = new ComboBox();
             button_Count = new Button();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // groupBox_Expression
@@ -65,17 +66,27 @@
             button_Count.UseVisualStyleBackColor = true;
             button_Count.Click += button_Count_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(177, 207);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 35);
+            textBox1.TabIndex = 3;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(377, 273);
+            Controls.Add(textBox1);
             Controls.Add(button_Count);
             Controls.Add(comboBox_CombName);
             Controls.Add(groupBox_Expression);
             Name = "MainForm";
             Text = "Combinatorics Calculator";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -83,5 +94,6 @@
         private GroupBox groupBox_Expression;
         private ComboBox comboBox_CombName;
         private Button button_Count;
+        private TextBox textBox1;
     }
 }

@@ -13,6 +13,7 @@ namespace CombinatoricsCalculator
         CombinationWithoutRep,
         CombinationWithRep,
         PermutationWithoutRep,
-        PermutationWithRep
+        PermutationWithRep,
+        Default
     }
 }

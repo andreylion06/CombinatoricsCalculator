@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CombinatoricsCalculator.UserControlls
 {
-    public interface IExpressionComponent
+    public abstract class ExpressionControl : UserControl
     {
-        CombName CombName { get; }
-        void TryGetArguments(out Dictionary<string, int[]> res);
+        public abstract Dictionary<string, int[]> GetArguments();
     }
 }
