@@ -20,7 +20,6 @@ namespace CombinatoricsCalculator.UserControlls
             label_Letter.Text = letter;
         }
 
-
         public override Dictionary<string, int[]> GetArguments()
         {
             if (textBox_k.Text.Length == 0)
@@ -36,6 +35,7 @@ namespace CombinatoricsCalculator.UserControlls
                 string tmp = textBox_k.Text;
                 textBox_k.Text = textBox_n.Text;
                 textBox_n.Text = tmp;
+                (k, n) = (n, k);
             }
 
             return new Dictionary<string, int[]> {

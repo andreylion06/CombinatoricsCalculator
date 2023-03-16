@@ -48,7 +48,6 @@
             comboBox_CombName.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox_CombName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox_CombName.FormattingEnabled = true;
-            comboBox_CombName.Items.AddRange(new object[] { "Placement Without Repeats", "Placement With Repeats", "Combination Without Repeats", "Combination With Repeats", "Permutation Without Repeats", "Permutation With Repeats" });
             comboBox_CombName.Location = new Point(12, 12);
             comboBox_CombName.Name = "comboBox_CombName";
             comboBox_CombName.Size = new Size(347, 33);
