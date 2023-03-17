@@ -1,10 +1,5 @@
 ﻿using CombinatoricsCalculator.HelperClasses;
 using CombinatoricsCalculator.UserControlls;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CombinatoricsCalculator.ExpressionModules
 {
@@ -13,10 +8,14 @@ namespace CombinatoricsCalculator.ExpressionModules
         protected ExpressionControl? control { get; set; }
         public UserControl LoadUserControl()
         {
-            Cleaner.Clean(control!);
+            TextBoxWorker.Clean(control!);
             return control!;
         }
-        public abstract void TryCount(out long res);
+        public void UnReadonlyFields()
+        {
+            TextBoxWorker.UnReadonly(control!);
+        }
+        public abstract void TryCount(out decimal res);
 
     }
 }

@@ -1,5 +1,5 @@
 using CombinatoricsCalculator.ExpressionModules;
-using CombinatoricsCalculator.UserControlls;
+using CombinatoricsCalculator.Module;
 
 namespace CombinatoricsCalculator
 {
@@ -9,7 +9,7 @@ namespace CombinatoricsCalculator
         {
             InitializeComponent();
 
-            comboBox_CombName.DataSource = CalculatorModules.GetListOfModules();
+            comboBox_CombName.DataSource = ModulesWorker.GetListOfModules();
         }
 
         ExpressionModule? currentModule;
@@ -18,17 +18,32 @@ namespace CombinatoricsCalculator
         {
             if (currentModule != null)
             {
-                long res;
+                decimal res;
                 currentModule.TryCount(out res);
-                textBox1.Text = res.ToString();
+                textBox_Result.Text = res.ToString();
+                button_Reset.Visible = true;
             }
         }
 
         private void comboBox_CombName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            currentModule = CalculatorModules.GetModuleByName(comboBox_CombName.SelectedItem.ToString()!);
+            currentModule = ModulesWorker.GetModuleByName(comboBox_CombName.SelectedItem.ToString()!);
             groupBox_Expression.Controls.Clear();
             groupBox_Expression.Controls.Add(currentModule.LoadUserControl());
+
+            SetFormToDefault();
+        }
+
+        private void button_Reset_Click(object sender, EventArgs e)
+        {
+            SetFormToDefault();
+        }
+
+        private void SetFormToDefault()
+        {
+            currentModule!.UnReadonlyFields();
+            textBox_Result.Text = "0";
+            button_Reset.Visible = false;
         }
     }
 }

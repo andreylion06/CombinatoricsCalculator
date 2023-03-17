@@ -1,19 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using CombinatoricsCalculator.HelperClasses;
+﻿using CombinatoricsCalculator.HelperClasses;
 
 namespace CombinatoricsCalculator.UserControlls
 {
-    public partial class LetterControl : ExpressionControl
+    public partial class CombinationControl : ExpressionControl
     {
-        public LetterControl(string letter)
+        public CombinationControl(string letter)
         {
             InitializeComponent();
 
@@ -37,6 +28,8 @@ namespace CombinatoricsCalculator.UserControlls
                 textBox_n.Text = tmp;
                 (k, n) = (n, k);
             }
+
+            TextBoxWorker.Readonly(this);
 
             return new Dictionary<string, int[]> {
                { "n", new int[] { n } },

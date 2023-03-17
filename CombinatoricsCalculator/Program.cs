@@ -1,3 +1,5 @@
+
+
 namespace CombinatoricsCalculator
 {
     internal static class Program

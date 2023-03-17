@@ -1,6 +1,6 @@
 ﻿namespace CombinatoricsCalculator.UserControlls
 {
-    partial class LetterControl
+    partial class CombinationControl
     {
         /// <summary> 
         /// Required designer variable.

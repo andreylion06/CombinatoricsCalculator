@@ -1,10 +1,5 @@
 ﻿using CombinatoricsCalculator.UserControlls;
 using CombinatoricsLibrary;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CombinatoricsCalculator.ExpressionModules
 {
@@ -12,9 +7,9 @@ namespace CombinatoricsCalculator.ExpressionModules
     {
         public PlacementWithoutRep()
         {
-            this.control = new LetterControl("A");
+            this.control = new CombinationControl("A");
         }
-        public override void TryCount(out long res)
+        public override void TryCount(out decimal res)
         {
             Dictionary<string, int[]> args = control!.GetArguments();
             res = Combinatorics.PlacementWithoutRep(args["n"][0], args["k"][0]);

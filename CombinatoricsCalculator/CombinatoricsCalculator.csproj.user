@@ -4,10 +4,19 @@
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UserControlls\CombinationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserControlls\ExpressionControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControlls\LetterControl.cs">
+    <Compile Update="UserControlls\PermutationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlls\PermutationNoRepControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControlls\PowerControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

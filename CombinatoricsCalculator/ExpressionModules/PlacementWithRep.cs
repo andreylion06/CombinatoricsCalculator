@@ -3,16 +3,16 @@ using CombinatoricsLibrary;
 
 namespace CombinatoricsCalculator.ExpressionModules
 {
-    public class CombinationWithoutRep : ExpressionModule
+    public class PlacementWithRep : ExpressionModule
     {
-        public CombinationWithoutRep()
+        public PlacementWithRep()
         {
-            this.control = new CombinationControl("C");
+            this.control = new PowerControl();
         }
         public override void TryCount(out decimal res)
         {
             Dictionary<string, int[]> args = control!.GetArguments();
-            res = Combinatorics.CombinationWithoutRep(args["n"][0], args["k"][0]);
+            res = Combinatorics.PlacementWithRep(args["n"][0], args["k"][0]);
         }
     }
 }

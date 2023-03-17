@@ -12,4 +12,8 @@
     <ProjectReference Include="..\CombinatoricsLibrary\CombinatoricsLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="UserControlls\PowerControl.cs" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,5 @@
-﻿namespace CombinatoricsLibrary
+﻿
+namespace CombinatoricsLibrary
 {
     public static class MathFunc
     {
@@ -10,15 +11,12 @@
             else
                 return n * Factorial(n - 1);
         }
-
         public static long IntPower(int n, int power)
         {
-            if (power == 0) return 1;
-            if (power == 1) return n;
-
-            return Enumerable
-              .Repeat(n,power)
-              .Aggregate(1, (a, b) => a * b);
+            long result = 1;
+            for (int i = 0; i < power; i++)
+                result *= n;
+            return result;
         }
     }
 }
